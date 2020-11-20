@@ -14,13 +14,6 @@ Website Chia Sẻ Công Thức Nấu Ăn
 	+ Single Post - Nội Dung Bài Viết Trên Blog
 	+ Contact Us - Liên Hệ
 
-***Chia Cộng Việc:***
-
-- Tuấn : Home - Recent Recipes - Recipes Detail
-- Trần : Blog - Single Post
-- Long : Services - Contact Us
-
-```
 
 Tổ Chức File:
 
