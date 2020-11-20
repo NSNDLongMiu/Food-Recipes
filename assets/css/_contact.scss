@@ -1,0 +1,39 @@
+#contact-form {
+    input[type="text"] {
+        width: 406px;
+        background-color: #f3f7f8;
+    }
+    p {
+        margin: 0 0 20px;
+        position: relative;
+    }
+    textarea {
+        width: 570px;
+        background-color: #f3f7f8;
+    }
+    input[type="submit"] {
+        height: 27px;
+        padding: 0 13px;
+        background: url(../images/button-bg-pink.png) repeat-x;
+        cursor: pointer;
+        &:hover {
+            background-position: bottom;
+        }
+    }
+    label.error {
+        position: absolute;
+        top: 10px;
+        right: 180px;
+        color: red;
+        font-weight: bold;
+    }
+    #message-sent,
+    #contact-loader {
+        display: none;
+    }
+}
+
+#map_canvas {
+    width: 575px;
+    height: 262px;
+}

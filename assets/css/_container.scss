@@ -1,0 +1,75 @@
+#container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.top-search {
+    padding: 25px 0;
+    background: url(../images/pet-border.png) bottom repeat-x;
+    position: relative;
+    h3 {
+        margin: 0 0 10px;
+        font-weight: bold;
+        span {
+            color: #5E6063;
+        }
+    }
+    form {
+        width: 255px;
+        padding: 0 32px 0 0;
+        margin: 0 10px 0 0;
+        float: left;
+        background: url(../images/right-seperator.png) right center no-repeat;
+    }
+    .field {
+        width: 180px;
+        height: 24px;
+        padding: 3px 5px 5px 8px;
+        background: url(../images/search-field.png) top no-repeat;
+        border: none;
+        margin: 0 10px 0 0;
+        color: #b1b1b1;
+        vertical-align: top;
+        &:focus {
+            background-position: bottom;
+        }
+    }
+    #s-submit {
+        display: inline-block;
+        width: 42px;
+        height: 29px;
+        background: url(../images/search-btn.png) left top no-repeat;
+        border: none;
+        vertical-align: top;
+        &:hover,
+        &:focus {
+            background-position: left bottom;
+            cursor: pointer;
+        }
+    }
+    .statement {
+        line-height: 34px;
+        a {
+            color: #858980;
+            &:hover,
+            &:focus {
+                color: #444;
+            }
+        }
+    }
+    .most-rated {
+        display: block;
+        width: 31px;
+        height: 86px;
+        background: url(../images/most-rated-btn.png) no-repeat;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+#content {
+    background: url(../images/content-bg.jpg) repeat-x #fff;
+    padding: 0 0 135px;
+    z-index: 600;
+}

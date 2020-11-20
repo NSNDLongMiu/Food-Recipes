@@ -1,0 +1,77 @@
+#left-area .recipe-listing-item {
+    .single-img-box {
+        float: left;
+        width: 262px;
+        height: 231px;
+        padding: 6px 0 0 6px;
+        margin: 0 0 10px 0;
+        background: url(../images/single-img-frame-listing.png) no-repeat;
+        img {
+            width: 250px;
+            height: 212px;
+        }
+    }
+    .recipe-info {
+        width: 310px;
+        padding: 0 0 0;
+        float: right;
+        h2 {
+            margin: 0 0 0;
+            a {
+                color: #0053a6;
+                line-height: 30px;
+                &:hover,
+                &:focus {
+                    color: #003f7e;
+                }
+            }
+        }
+        .recipe-tags {
+            margin: 5px 0;
+            font-size: 12px;
+            color: #1D7DA3;
+            .type {
+                margin: 0 10px 0 0;
+            }
+        }
+        .rating {
+            height: 25px;
+            padding: 5px;
+            margin: 0 0 15px;
+            border: 1px solid #e3e3e3;
+            background-color: #fff;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            span {
+                display: inline-block;
+                vertical-align: top;
+                line-height: 25px;
+                margin: 0 0 0 10px;
+                span {
+                    margin: 0 0 0 10px;
+                    color: #009;
+                }
+            }
+            .on {
+                width: 19px;
+                height: 26px;
+                background: url(../images/ratings-big.png) left top no-repeat;
+                margin: 0;
+            }
+            .off {
+                width: 19px;
+                height: 26px;
+                background: url(../images/ratings-big.png) left top no-repeat;
+                margin: 0;
+                background-position: right top;
+            }
+        }
+        p {
+            margin: 0 0 15px;
+        }
+        .readmore {
+            margin: 0;
+        }
+    }
+}

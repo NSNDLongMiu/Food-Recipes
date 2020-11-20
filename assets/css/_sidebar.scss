@@ -1,0 +1,96 @@
+#sidebar {
+    width: 302px;
+    float: right;
+    margin: 0 31px 0 0;
+    padding: 41px 0 0;
+    .widget {
+        margin: 0 0 35px;
+        float: none;
+        border: 1px solid #e3e3e3;
+        padding: 10px 16px;
+        position: relative;
+        background: url(../images/widget-g-bg.png) top repeat-x #fff;
+        border: 1px solid #e3e3e3;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        ul li {
+            padding: 0 0 12px;
+            margin: 0 0 10px;
+            background: url(../images/li-bot-border.jpg) bottom repeat-x;
+            font-size: 13px;
+            color: #909090;
+            line-height: 22px;
+            a {
+                color: #1d7da3;
+            }
+            &:last-child {
+                background: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .phone,
+        .email,
+        .note {
+            display: block;
+            height: 25px;
+            padding: 0 0 0 35px;
+            margin: 0 0 7px;
+            font: 16px/25px "MuseoSlab500", Arial, Helvetica, sans-serif;
+            font-style: italic;
+            background: url(../images/sidebar-icons.png) left top no-repeat;
+        }
+        .email {
+            background-position: left center;
+        }
+        .note {
+            background-position: left bottom;
+        }
+        h4.blue {
+            font-size: 16px;
+            color: #0053a6;
+            margin: 0 0 10px;
+        }
+        &.archives {
+            a {
+                font-size: 12px;
+                color: #1d7da3;
+            }
+            ul {
+                padding: 5px 0 0;
+                li {
+                    height: 32px;
+                    line-height: 32px;
+                    padding: 0 0 2px;
+                    margin: 0;
+                    background: url(../images/li-bot-border.jpg) 0 bottom repeat-x;
+                }
+            }
+        }
+        &.twitter ul li {
+            padding: 0 0 12px;
+            margin: 0 0 10px;
+            background: url(../images/li-bot-border.jpg) bottom repeat-x;
+            &:last-child {
+                background: none;
+            }
+        }
+        .widget-bot-round {
+            width: 302px;
+            height: 11px;
+            background: url(../images/3round-bottom-302x11.png) no-repeat;
+            position: absolute;
+            left: -1px;
+            bottom: -6px;
+        }
+        &.nostylewt {
+            border: none;
+            padding: 0;
+            background: none;
+        }
+    }
+    .list {
+        margin-bottom: 2em;
+    }
+}

@@ -1,0 +1,180 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Food_Recipes_ASP.NET_WebForm.SiteMaster" %>
+
+<%@ Register Src="~/userControls/TopSearch.ascx" TagPrefix="uc1" TagName="TopSearch" %>
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foot Recipes</title>
+
+    <link rel="shortcut icon" href="./assets/images/icons/favicon.png" />
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+
+    <link
+        rel="stylesheet"
+        href="./assets/frameworks/Nivo-Slider-jQuery/nivo-slider.css"
+        type="text/css"
+        media="screen" />
+    <link
+        rel="stylesheet"
+        media="all"
+        type="text/css"
+        href="./assets/frameworks/prettyPhoto_compressed_3.1.6/prettyPhoto_compressed_3.1.6/css/prettyPhoto.css" />
+
+    <script
+        type="text/javascript"
+        src="./assets/js/jquery-1.11.0.js"></script>
+
+    <script
+        type="text/javascript"
+        src="./assets/js/jquery.easing.1.3.js"></script>
+    <script
+        type="text/javascript"
+        src="./assets/js/jquery.cycle.js"></script>
+    <script
+        type="text/javascript"
+        src="./assets/js/jquery.backgroundPosition.js"></script>
+    <script
+        type="text/javascript"
+        src="./assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script
+        type="text/javascript"
+        src="./assets/js/jquery.validate.js"></script>
+    <script
+        type="text/javascript"
+        src="./assets/js/twitterFetcher_v10_min.js"></script>
+    <script
+        type="text/javascript"
+        src="./assets/frameworks/Nivo-Slider-jQuery/jquery.nivo.slider.js"></script>
+    <script
+        type="text/javascript"
+        src="./assets/frameworks/prettyPhoto_compressed_3.1.6/prettyPhoto_compressed_3.1.6/js/jquery.prettyPhoto.js"></script>
+
+    <script type="text/javascript" src="./assets/js/scripts.js"></script>
+    <script type="text/javascript" src="./assets/js/redirect.js"></script>
+    <script type="text/javascript" src="./assets/js/activeMenu.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <a href="index.html">
+                <img
+                    src="./assets/images/logo.png"
+                    alt="Food Recipes"
+                    class="logo" /></a>
+        </div>
+        <div id="nav-wrap">
+            <div class="inn-nav clearfix">
+                <ul class="nav">
+                    <li>
+                        <a id="index_html">Trang Chủ</a>
+                    </li>
+                    <li>
+                        <a id="recipes_html">Công Thức Gần Đây</a>
+                    </li>
+                    <%--<li>
+                        <a id="single-sb_html">Công Thức Chi Tiết</a>
+                        <!-- <ul>
+                                <li>
+                                    <a href="single-sb.html">Variation One</a>
+                                </li>
+                                <li>
+                                    <a href="single-full.html">Variation Two</a>
+                                </li>
+                            </ul> -->
+                    </li>--%>
+                    <li><a id="services_html">Dịch Vụ</a></li>
+                    <li><a id="blog_html">Blog</a></li>
+                    <!-- <li><a href="single.html">Single Post</a></li> -->
+                    <li><a id="contact_html">Liên Hệ</a></li>
+                </ul>
+                <ul class="social-nav">
+                    <li class="twitter">
+                        <a href="https://twitter.com/King_NNT"></a>
+                    </li>
+                    <li class="facebook">
+                        <a href="https://www.facebook.com/Kinggg.NNT"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <span class="w-pet-border"></span>
+    </header>
+    <main>
+        <div id="container">
+            <uc1:TopSearch runat="server" ID="TopSearch" />
+
+            <div id="content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="w-pet-border"></div>
+    </main>
+
+    <footer>
+        <div id="bottom-wrap">
+            <ul id="bottom" class="clearfix">
+                <li>
+                    <div class="about">
+                        <a href="index.html">
+                            <img
+                                src="./assets/images/footer-logo.png"
+                                alt="Footer Logo"
+                                class="footer-logo" /></a>
+                        <p>
+                            Nơi chia sẻ cho bạn những món ăn cực kì ngon không chỉ ở Việt Nam mà còn trên khắp thế giới...
+                        </p>
+                        <a href="#" class="readmore">Xem Thêm Về Chúng Tôi</a>
+                    </div>
+                </li>
+                <li>
+                    <h2>Món Ngon <span>Gần Đây</span></h2>
+                    <ul class="recent-posts">
+                        <li>
+                            <a href="#" class="img-box">
+                                <img
+                                    src="./assets/images/tiny-images/tiny_16.jpg"
+                                    alt="Image" /></a>
+                            <h5><a href="#">Cơm Trộn Ngũ Vị</a></h5>
+                            <p>
+                                Thành phần chính là cơm, đặt ở trên là namul và Koch'uchang hoặc Bông cải.
+                            </p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="img-box">
+                                <img
+                                    src="./assets/images/tiny-images/tiny_17.jpg"
+                                    alt="Image" /></a>
+                            <h5><a href="#">Pizza Thịt Nướng</a></h5>
+                            <p>
+                                Pizza thịt nướng là sự kết hợp tuyệt vời làm thỏa mãn vị giác của bạn.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h2>Cập Nhật <span>Twitter</span></h2>
+                    <div id="twitter_update_list" class="twitter"></div>
+                </li>
+            </ul>
+        </div>
+        <div id="footer-wrap">
+            <div id="footer">
+                <p class="copyright">Copyright © 2020, Food Recipes</p>
+                <p class="dnd">
+                    Developed by
+                        <a href="https://www.facebook.com/Kinggg.NNT">KingNNT</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,418 @@
+#slider {
+    height: 500px;
+    margin: 0 auto 65px;
+    padding: 20px 31px 0;
+    background: url(../images/pettern-gray.png) bottom repeat-x #f7f7f7;
+    position: relative;
+    z-index: 601;
+    .slider-head {
+        margin: 0 0 23px;
+        float: left;
+        img {
+            vertical-align: middle;
+        }
+    }
+    .slogan {
+        float: left;
+        font: 13px "DroidSans", Arial, Helvetica, sans-serif;
+        line-height: 42px;
+        color: #909090;
+        padding: 0 0 0 10px;
+    }
+    .slides {
+        clear: both;
+        height: 398px;
+        border: 1px solid #e3e3e3;
+        position: relative;
+        z-index: 602;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        h2 a {
+            color: #0053a6;
+            &:hover,
+            &:focus {
+                color: #003f7e;
+            }
+        }
+        ul {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 100%;
+            height: 386px;
+            li {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        &.basic ul li {
+            width: 905px;
+            height: 386px;
+        }
+        ul li {
+            .about {
+                position: absolute;
+                bottom: 30px;
+                left: 27px;
+                width: 350px;
+                height: 179px;
+                background: url(../images/white-transparant.png);
+                padding: 28px 25px;
+                h2 {
+                    line-height: 28px;
+                    margin: 0 0 5px;
+                }
+                .readmore {
+                    position: absolute;
+                    bottom: 25px;
+                    left: 25px;
+                }
+            }
+            &.slide2 .about {
+                left: auto;
+                right: 27px;
+            }
+            .about p {
+                margin: 0 0 24px;
+                color: #333;
+            }
+        }
+        .sliderNav {
+            width: 100%;
+            position: absolute;
+            bottom: -56px;
+            left: 0;
+            text-align: center;
+            span {
+                display: inline-block;
+                height: 16px;
+                padding: 5px 17px 5px 9px;
+                background: url(../images/pettern-gray-tile.png);
+                border-radius: 5px;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                a {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    background: url(../images/bulit.png) no-repeat;
+                    margin: 0 0 0 9px;
+                    font-size: 0;
+                    &.activeSlide {
+                        background-position: bottom;
+                    }
+                }
+            }
+        }
+    }
+}
+
+html[data-useragent*='MSIE 10.0'] #slider .slides .sliderNav span a,
+.ie #slider .slides .sliderNav span a,
+.ie8 #slider .slides .sliderNav span a,
+.ie9 #slider .slides .sliderNav span a {
+    position: relative;
+    top: -11px;
+}
+
+#slider {
+    &.slider2 {
+        height: 425px;
+        padding-top: 10px;
+        margin: 0 0 50px;
+        .slider-head {
+            margin: 10px 0 0;
+            width: 458px;
+        }
+        .slogan {
+            width: 458px;
+            margin: 0 0 15px;
+        }
+        .most-rated {
+            width: 371px;
+            height: 88px;
+            padding: 18px 0 0 119px;
+            background: url(../images/most-rated-bg.png) no-repeat;
+            position: absolute;
+            top: -15px;
+            right: 0;
+            z-index: 605;
+            .img-box {
+                display: block;
+                width: 67px;
+                height: 60px;
+                float: left;
+                padding: 4px 0 0 4px;
+                margin: 0 10px 0 0;
+                background: url(../images/image-frame-71x64.png) no-repeat;
+                img {
+                    width: 63px;
+                    height: 53px;
+                }
+            }
+            h5 {
+                line-height: 19px;
+                margin: 2px 0 0;
+                font-weight: normal;
+                a {
+                    color: #0053a6;
+                    &:hover,
+                    &:focus {
+                        color: #003077;
+                    }
+                }
+                font-size: 0.8em;
+            }
+            p {
+                font-size: 0.7em;
+            }
+            .rate {
+                color: #0053a6;
+                span {
+                    display: inline-block;
+                    width: 12px;
+                    height: 18px;
+                    background: url(../images/spons.png) right top no-repeat;
+                    vertical-align: middle;
+                    line-height: 18px;
+                    &:last-child {
+                        margin-right: 5px;
+                    }
+                    &.on {
+                        background: url(../images/spons.png) left top no-repeat;
+                    }
+                }
+            }
+        }
+        .slides {
+            height: 315px;
+            margin: 0 0 0;
+            border: none;
+            .img-box {
+                display: block;
+                width: 522px;
+                height: 275px;
+                padding: 7px 0 0 7px;
+                background: url(../images/slider2-img-bg.png) no-repeat;
+                float: left;
+                margin: 0 20px 0 0;
+                img {
+                    width: 515px;
+                    height: 262px;
+                }
+            }
+            .slide-info {
+                width: 363px;
+                padding: 10px 0 0;
+                float: right;
+                h2 {
+                    margin: 0 0 20px;
+                    font-weight: bold;
+                    a {
+                        color: #0053a6;
+                        line-height: 30px;
+                        &:hover,
+                        &:focus {
+                            color: #003f7e;
+                        }
+                    }
+                }
+                .rating {
+                    height: 25px;
+                    padding: 5px;
+                    margin: 0 0 15px;
+                    border: 1px solid #e3e3e3;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    span {
+                        display: inline-block;
+                        vertical-align: top;
+                        line-height: 25px;
+                        margin: 0 0 0 10px;
+                        span {
+                            margin: 0 0 0 10px;
+                            color: #009;
+                        }
+                    }
+                    .on {
+                        width: 19px;
+                        height: 26px;
+                        background: url(../images/ratings-big.png) left top no-repeat;
+                        margin: 0;
+                    }
+                    .off {
+                        width: 19px;
+                        height: 26px;
+                        background: url(../images/ratings-big.png) left top no-repeat;
+                        margin: 0;
+                        background-position: right top;
+                    }
+                }
+                p {
+                    margin: 0 0 15px;
+                }
+            }
+            .sliderNav {
+                bottom: -25px;
+            }
+        }
+    }
+    &.accordionSlider {
+        height: 460px;
+    }
+    .accor-slider {
+        position: relative;
+        border: 1px solid #e3e3e3;
+        height: 425px;
+        width: 910px;
+        margin: 0 auto;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+}
+
+#accordion-slider {
+    width: 896px;
+    height: 413px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+
+.sm {
+    list-style: none;
+    display: block;
+    overflow: hidden;
+    li {
+        float: left;
+        display: inline;
+        overflow: hidden;
+        -moz-box-shadow: -10px 0 50px #313131;
+        -webkit-box-shadow: -10px 0 50px #313131;
+        box-shadow: -10px 0 50px #313131;
+    }
+}
+
+#slider {
+    .thumb-slider-wrap {
+        border: 1px solid #e3e3e3;
+        position: relative;
+        padding: 6px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        .thumb-slider {
+            height: 370px;
+        }
+        img {
+            width: 905px;
+        }
+    }
+    .sliderThumbs {
+        overflow: hidden;
+        margin: 25px 0 0 -10px;
+        text-align: center;
+        li {
+            display: inline;
+            a {
+                display: inline-block;
+                background: url(../images/pet-border.png);
+                padding: 3px;
+                margin: 0 0 0 10px;
+            }
+            &.activeSlide a {
+                background: url(../images/pet-border.png) #62981b;
+            }
+            img {
+                display: block;
+            }
+        }
+    }
+    &.nivo-container {
+        height: 460px;
+    }
+    .nivo-slider {
+        position: relative;
+        width: 903px;
+        height: 369px;
+        margin: 10px 0 0;
+        padding: 6px;
+        border: 1px solid #e3e3e3;
+        position: relative;
+        z-index: 602;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        .nivo-controlNav {
+            width: 80px;
+            position: absolute;
+            bottom: -97px;
+            left: 410px;
+            text-align: center;
+            height: 16px;
+            padding: 7px 17px 7px 9px;
+            background: url(../images/pettern-gray-tile.png);
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            a {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background: url(../images/bulit.png) no-repeat;
+                margin: 0 0 0 9px;
+                font-size: 0;
+                &.active {
+                    background-position: bottom;
+                }
+            }
+        }
+    }
+}
+
+.ie8 #slider .nivo-slider .nivo-controlNav a,
+.ie9 #slider .nivo-slider .nivo-controlNav a {
+    position: relative;
+    top: -10px;
+}
+
+#slider {
+    .nivo-directionNav {
+        a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            font-size: 0;
+            background: url(../frameworks/Nivo-Slider-jQuery/themes/default/arrows.png) 0 -1px no-repeat;
+        }
+        .nivo-prevNav {
+            background-position: left top;
+            left: 15px;
+        }
+        .nivo-nextNav {
+            background-position: right top;
+            right: 15px;
+        }
+    }
+    #myGallery {
+        width: 100%;
+        height: 450px;
+    }
+    .nivo-slider .nivo-slides {
+        height: 369px;
+    }
+    .nivo-caption h3 {
+        font-weight: normal;
+    }
+}

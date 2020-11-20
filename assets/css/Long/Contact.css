@@ -1,0 +1,257 @@
+﻿.center {
+    width: 980px;
+    height: 137px;
+    margin: 0px auto;
+}
+
+#mid {
+    width: 1349px;
+    height: 1338px;
+    margin: 0px auto;
+}
+
+#left_mid {
+    width: 184.5px;
+    height: 1220px;
+    float: left;
+}
+
+#content_mid {
+    width: 980px;
+    height: 1220px;
+    float: left;
+<<<<<<< HEAD
+    position : relative;
+    left : 25px ;
+=======
+    background: url(../images-long/tabed-bg.png) repeat-x;
+    position : relative ; 
+    left : 25px ; 
+>>>>>>> 9fd78633dc7d33771c8dd300099f18b315afac13
+    background: url(../../images-long/tabed-bg.png) repeat-x;
+}
+
+#services {
+    width: 980px;
+    height: 80px;
+    position: relative;
+    top: 20px;
+    font-size: 25px;
+}
+
+#text {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    color: turquoise;
+    font-size: 30px;
+}
+
+#text_1 {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    color: gray;
+}
+
+#content_left {
+    width: 600px;
+    height: 1080px;
+    float: left;
+}
+
+#text_2 {
+    color: turquoise;
+    font-family: Sofia;
+    font-size: 30px;
+    margin-left: 25px;
+}
+.repib {
+    font-size: 25px;
+}
+.map {
+    width: 600px;
+    height: 350px;
+    background: url(../../images-long/single-img-frame.png) no-repeat;
+    float: left;
+}
+
+.iframe_map {
+    margin: 5px 4px;
+}
+
+.quick {
+    width: 540px;
+    height: 500px;
+    margin: 0px 30px;
+    float: left;
+    position: relative;
+    top: 30px;
+}
+
+.border_top_quick {
+    width: 550px;
+    height: 5px;
+    background: url(../../images-long/pet-border.png) repeat-x;
+    position: relative;
+    left: 25px;
+    top: 20px;
+}
+
+.form_text {
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+    font-family: arial;
+}
+.form_text_gmail {
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    position: relative;
+    top: 40px;
+    font-family: arial;
+}
+
+.message_text {
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 60px;
+    font-family: arial;
+}
+
+.submit {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 60px;
+}
+
+    .submit:hover {
+        background: pink;
+    }
+
+#content_right {
+    width: 380px;
+    height: 1080px;
+    float: left;
+    position: relative;
+    bottom: 80px;
+}
+
+#address {
+    width: 380px;
+    height: 320px;
+    float: left;
+}
+
+.picture_1 {
+    width: 302px;
+    height: 325px;
+    background: url(../../images-long/frame302x325.jpg) no-repeat;
+    line-height: 22px;
+    position: absolute;
+    left: 29px;
+}
+
+.tt {
+    width: 260px;
+    height: 260px;
+    margin: 20px 20px;
+}
+
+#inquiries {
+    width: 380px;
+    height: 320px;
+    float: left;
+    margin-top: 50px;
+}
+
+.sale {
+    width: 302px;
+    height: 309px;
+    background: url(../../images-long/frame302x309.jpg) repeat-x;
+    position: relative;
+    left: 29px;
+}
+
+.address_text {
+    font-size: 22px;
+}
+
+.if_text {
+    color: gray;
+    position: relative;
+    top: 10px;
+}
+
+.recipe_text {
+    color: gray;
+    position: relative;
+    top: 30px;
+}
+
+.border_top {
+    width: 250px;
+    height: 5px;
+    background: url(../../images-long/pet-border.png) repeat-x;
+    position: relative;
+    top: 20px;
+}
+
+.border_bot {
+    width: 250px;
+    height: 5px;
+    background: url(../../images-long/pet-border.png) repeat-x;
+    position: relative;
+    top: 40px;
+}
+
+.lh {
+    width: 250px;
+    height: 95px;
+    position: relative;
+    top: 60px;
+}
+
+.phone {
+    width: 180px;
+    height: 25px;
+    margin-bottom: 5px;
+    position: relative;
+    bottom: 82px;
+    left: 40px;
+    color: gray;
+}
+
+.backbot {
+    width: 260px;
+    height: 180px;
+    margin: 0px 20px;
+}
+
+.salesinquiries_text {
+    font-size: 22px;
+    position: relative;
+    top: 10px;
+}
+
+#right_mid {
+    width: 184.5px;
+    height: 1220px;
+    float: left;
+}
+
+#bot {
+    width: 1349px;
+    height: 343px;
+    margin: 0px auto;
+    float: left;
+}

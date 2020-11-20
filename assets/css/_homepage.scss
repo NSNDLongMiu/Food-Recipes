@@ -1,0 +1,266 @@
+#whats-hot {
+    padding: 0 0 42px;
+    .cat-list {
+        margin: 0 0 0 -17px;
+        li {
+            width: 232px;
+            float: left;
+            margin: 0 0 0 17px;
+            h3 {
+                font-weight: normal;
+            }
+            .img-box {
+                display: block;
+                width: 227px;
+                height: 152px;
+                padding: 5px 0 0 5px;
+                margin: 0 0 15px;
+                vertical-align: top;
+                background: url(../images/image-frame-232x157.png) no-repeat;
+                img {
+                    width: 222px;
+                    height: 144px;
+                }
+            }
+            h4 {
+                padding: 0 0 15px;
+                margin: 0 0 5px;
+                background: url(../images/pet-border.png) center 33px repeat-x;
+                color: #0053a6;
+                font-weight: normal;
+                a {
+                    color: #0053a6;
+                    &:hover,
+                    &:focus {
+                        color: #003f7e;
+                    }
+                }
+            }
+            p {}
+        }
+    }
+}
+
+#home-infos {
+    margin: 35px 0 0 -29px;
+    >div {
+        margin: 0 0 0 29px;
+    }
+}
+
+.wk-special {
+    width: 310px;
+    float: left;
+    margin: 0 30px 0 0;
+    .img-box {
+        width: 127px;
+        height: 140px;
+        padding: 5px 0 0 5px;
+        float: left;
+        margin: 0 12px 20px 0;
+        background: url(../images/image-frame-132x145.png) no-repeat;
+    }
+    h4 {
+        font-family: "DroidSans", Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        a {
+            color: #0053a6;
+            &:hover,
+            &:focus {
+                color: #003f7e;
+            }
+        }
+    }
+    p {
+        margin: 0 0 15px;
+    }
+    .readmore {
+        float: none;
+        margin: 0 0 19px;
+    }
+}
+
+.newsEvent {
+    width: 310px;
+    float: left;
+    .list li {
+        padding: 0 0 17px;
+        margin: 0 0 13px;
+        background: url(../images/li-bot-border.jpg) bottom repeat-x;
+        &:last-child {
+            background: none;
+        }
+    }
+    a {
+        color: #548f04;
+        &:hover,
+        &:focus {
+            color: #3f6b03;
+        }
+    }
+    h5 {
+        font-family: "DroidSans", Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        a {
+            color: #484848;
+            &:hover,
+            &:focus {
+                color: #000;
+            }
+        }
+    }
+}
+
+.fav-recipes {
+    width: 302px;
+    float: right;
+    margin: 0 0 0 30px;
+    position: relative;
+    .bot-border {
+        width: 302px;
+        height: 11px;
+        background: url(../images/3round-bottom-302x11.png) no-repeat;
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+    }
+}
+
+.widget.fav-recipes .bot-border {
+    bottom: 0;
+}
+
+// .ie7 {
+//     .fav-recipes .bot-border {
+//         bottom: 38px;
+//     }
+//     .widget.fav-recipes .bot-border {
+//         bottom: 8px;
+//     }
+// }
+
+.tabed {
+    padding: 14px 0 0;
+    margin: 0 0 15px;
+    border: 1px solid #e3e3e3;
+    background: url(../images/tabed-bg.png) repeat-x;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    .tabs {
+        height: 31px;
+        border-bottom: 1px solid #e3e3e3;
+        position: relative;
+        li {
+            height: 31px;
+            padding: 0 21px 3px !important;
+            line-height: 31px !important;
+            float: left;
+            margin: 0 0 0 9px !important;
+            background-color: #fff !important;
+            position: relative;
+            border: 1px solid #e3e3e3;
+            cursor: pointer;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            span {
+                width: 110%;
+                height: 6px;
+                border-top: 1px solid #e3e3e3;
+                position: absolute;
+                left: -2px;
+                bottom: -3px;
+                background-color: #f6f8f4;
+            }
+        }
+    }
+}
+
+// .ie8 .tabed .tabs li span {
+//     left: -5px;
+// }
+
+.tabed {
+    .tabs li.current {
+        background: none !important;
+        span {
+            display: block;
+            width: 102%;
+            height: 7px;
+            left: -1px;
+            bottom: -3px;
+            border: none;
+        }
+    }
+    .block {
+        padding: 18px 16px;
+        display: none;
+        background: url(../images/tabed-bg.png) 0 -40px no-repeat;
+        &.current {
+            display: block;
+        }
+        li {
+            overflow: hidden;
+            height: 64px;
+            padding: 0 0 18px;
+            background: url(../images/pet-border.png) 0 79px repeat-x;
+            margin: 0 0 13px;
+            .img-box {
+                display: block;
+                width: 67px;
+                height: 60px;
+                float: left;
+                padding: 4px 0 0 4px;
+                margin: 0 10px 0 0;
+                background: url(../images/image-frame-71x64.png) no-repeat;
+                img {
+                    width: 63px;
+                    height: 53px;
+                }
+            }
+            h5 {
+                line-height: 17px;
+                margin: 0 0 5px;
+                font-weight: normal;
+                a {
+                    color: #666666;
+                    &:hover,
+                    &:focus {
+                        color: #222;
+                    }
+                }
+            }
+            .rate {
+                color: #0053a6;
+                span {
+                    display: inline-block;
+                    width: 12px;
+                    height: 18px;
+                    background: url(../images/spons.png) right top no-repeat;
+                    vertical-align: middle;
+                    line-height: 18px;
+                    &:last-child {
+                        margin-right: 5px;
+                    }
+                    &.on {
+                        background: url(../images/spons.png) left top no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#home-infos .ads-642x79 {
+    width: 647px;
+    height: 90px;
+    float: left;
+    margin: 17px 0 0 26px;
+    padding: 5px 0 0 5px;
+    background: url(../images/ad-652x95.png) no-repeat;
+    img {
+        width: 642px;
+        height: 79px;
+    }
+}

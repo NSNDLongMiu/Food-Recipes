@@ -1,0 +1,804 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{178D49F6-9D74-4984-A842-62744551F27D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Food_Recipes_ASP.NET_WebForm</RootNamespace>
+    <AssemblyName>Food-Recipes-ASP.NET-WebForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.4.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\Long\Contact.css" />
+    <Content Include="assets\css\Long\Services.css" />
+    <Content Include="assets\css\styles.css" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.gitignore" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\config" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\description" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\HEAD" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\hooks\applypatch-msg.sample" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\hooks\commit-msg.sample" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\hooks\fsmonitor-watchman.sample" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\hooks\post-update.sample" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\hooks\pre-applypatch.sample" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\hooks\pre-commit.sample" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\hooks\pre-push.sample" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\hooks\pre-rebase.sample" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\hooks\pre-receive.sample" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\hooks\prepare-commit-msg.sample" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\hooks\update.sample" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\index" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\info\exclude" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\logs\HEAD" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\logs\refs\heads\master" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\logs\refs\remotes\origin\HEAD" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\objects\pack\pack-6f0a71ad5f178414a4c85d04daed4f6893559687.idx" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\objects\pack\pack-6f0a71ad5f178414a4c85d04daed4f6893559687.pack" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\packed-refs" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\refs\heads\master" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\.git\refs\remotes\origin\HEAD" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\demo\demo.html" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\demo\images\dev7logo.png" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\demo\images\nemo.jpg" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\demo\images\toystory.jpg" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\demo\images\up.jpg" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\demo\images\walle.jpg" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\demo\scripts\jquery-1.9.0.min.js" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\demo\style.css" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\jquery.nivo.slider.js" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\jquery.nivo.slider.pack.js" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\license.txt" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\nivo-slider.css" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\nivoslider.jquery.json" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\package.json" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\README.md" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\bar\arrows.png" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\bar\bar.css" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\bar\bullets.png" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\bar\loading.gif" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\dark\arrows.png" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\dark\bullets.png" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\dark\dark.css" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\dark\loading.gif" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\default\arrows.png" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\default\bullets.png" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\default\default.css" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\default\loading.gif" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\light\arrows.png" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\light\bullets.png" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\light\light.css" />
+    <Content Include="assets\frameworks\Nivo-Slider-jQuery\themes\light\loading.gif" />
+    <Content Include="assets\images-long\3round-bottom-302x11.png" />
+    <Content Include="assets\images-long\accordion-title-bg.png" />
+    <Content Include="assets\images-long\accordion-title-span.png" />
+    <Content Include="assets\images-long\ad-652x95.png" />
+    <Content Include="assets\images-long\adv.jpg" />
+    <Content Include="assets\images-long\arrow-menu-list.png" />
+    <Content Include="assets\images-long\arrows.png" />
+    <Content Include="assets\images-long\author1.jpg" />
+    <Content Include="assets\images-long\author2.jpg" />
+    <Content Include="assets\images-long\author3.jpg" />
+    <Content Include="assets\images-long\banh.jpg" />
+    <Content Include="assets\images-long\banh1.jpg" />
+    <Content Include="assets\images-long\black-trans.png" />
+    <Content Include="assets\images-long\blog\post_1.jpg" />
+    <Content Include="assets\images-long\blog\post_2.jpg" />
+    <Content Include="assets\images-long\blog\post_3.jpg" />
+    <Content Include="assets\images-long\bottom-recent-botder.png" />
+    <Content Include="assets\images-long\bulit-arrow1.png" />
+    <Content Include="assets\images-long\bulit-arrow2.png" />
+    <Content Include="assets\images-long\bulit-check.png" />
+    <Content Include="assets\images-long\bulit.png" />
+    <Content Include="assets\images-long\button-bg-h29.png" />
+    <Content Include="assets\images-long\button-bg-pink.png" />
+    <Content Include="assets\images-long\ca.gif" />
+    <Content Include="assets\images-long\car-nav.png" />
+    <Content Include="assets\images-long\carnav-arrows.png" />
+    <Content Include="assets\images-long\chef.jpg" />
+    <Content Include="assets\images-long\content-bg.jpg" />
+    <Content Include="assets\images-long\faq-num-bg.png" />
+    <Content Include="assets\images-long\footer-logo.png" />
+    <Content Include="assets\images-long\frame-142x119.png" />
+    <Content Include="assets\images-long\frame.png" />
+    <Content Include="assets\images-long\frame301x235.png" />
+    <Content Include="assets\images-long\frame302x309.jpg" />
+    <Content Include="assets\images-long\frame302x325.jpg" />
+    <Content Include="assets\images-long\header-image.jpg" />
+    <Content Include="assets\images-long\image-frame-132x145.png" />
+    <Content Include="assets\images-long\image-frame-232x157.png" />
+    <Content Include="assets\images-long\image-frame-71x64.png" />
+    <Content Include="assets\images-long\image-frame-92x89.png" />
+    <Content Include="assets\images-long\image-frame-dark-71x64.png" />
+    <Content Include="assets\images-long\li-bot-border.jpg" />
+    <Content Include="assets\images-long\loading.gif" />
+    <Content Include="assets\images-long\logo.png" />
+    <Content Include="assets\images-long\more-img-slider-bg.png" />
+    <Content Include="assets\images-long\most-rated-bg.png" />
+    <Content Include="assets\images-long\most-rated-btn.png" />
+    <Content Include="assets\images-long\nav-bg.png" />
+    <Content Include="assets\images-long\nav-hover.png" />
+    <Content Include="assets\images-long\nav-seperator.png" />
+    <Content Include="assets\images-long\nem.jpg" />
+    <Content Include="assets\images-long\pet-border.png" />
+    <Content Include="assets\images-long\pettern-gray-tile.png" />
+    <Content Include="assets\images-long\pettern-gray.png" />
+    <Content Include="assets\images-long\pizza.jpg" />
+    <Content Include="assets\images-long\quote-close.png" />
+    <Content Include="assets\images-long\quote-open.png" />
+    <Content Include="assets\images-long\rate-box-bg.png" />
+    <Content Include="assets\images-long\ratings-big.png" />
+    <Content Include="assets\images-long\red-tab-bg.jpg" />
+    <Content Include="assets\images-long\right-seperator.png" />
+    <Content Include="assets\images-long\search-btn.png" />
+    <Content Include="assets\images-long\search-field.png" />
+    <Content Include="assets\images-long\services-box.png" />
+    <Content Include="assets\images-long\services\services_1.jpg" />
+    <Content Include="assets\images-long\services\services_2.jpg" />
+    <Content Include="assets\images-long\services\services_3.jpg" />
+    <Content Include="assets\images-long\services\services_4.jpg" />
+    <Content Include="assets\images-long\services\services_5.jpg" />
+    <Content Include="assets\images-long\services\services_6.jpg" />
+    <Content Include="assets\images-long\share-btns.png" />
+    <Content Include="assets\images-long\sidebar-icons.png" />
+    <Content Include="assets\images-long\single-img-frame-listing.png" />
+    <Content Include="assets\images-long\single-img-frame.png" />
+    <Content Include="assets\images-long\slider-heading.png" />
+    <Content Include="assets\images-long\slider2-img-bg.png" />
+    <Content Include="assets\images-long\social-facebook.png" />
+    <Content Include="assets\images-long\social-flickr.png" />
+    <Content Include="assets\images-long\social-rss.png" />
+    <Content Include="assets\images-long\social-twitter.png" />
+    <Content Include="assets\images-long\spaghetti.png" />
+    <Content Include="assets\images-long\spons.png" />
+    <Content Include="assets\images-long\tabed-bg.png" />
+    <Content Include="assets\images-long\toggle-box-icon.png" />
+    <Content Include="assets\images-long\top-bg.jpg" />
+    <Content Include="assets\images-long\twice1.jpg" />
+    <Content Include="assets\images-long\white-transparant.png" />
+    <Content Include="assets\images-long\widget-g-bg.png" />
+    <Content Include="assets\js\Long\validate.js" />
+    <Content Include="Blog.aspx" />
+    <Content Include="Services.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Services-Detail.aspx" />
+    <Content Include="Single-sb.aspx" />
+    <Content Include="Single.aspx" />
+    <Content Include="userControls\Archives.ascx" />
+    <Content Include="assets\css\styles.scss" />
+    <Content Include="assets\css\_base.scss" />
+    <Content Include="assets\fonts\droidsans-bold-webfont.svg" />
+    <Content Include="assets\fonts\droidsans-bold-webfont.woff" />
+    <Content Include="assets\fonts\droidsans-bold-webfontd41d.eot" />
+    <Content Include="assets\fonts\droidsans-webfont.eot" />
+    <Content Include="assets\fonts\droidsans-webfont.svg" />
+    <Content Include="assets\fonts\droidsans-webfont.woff" />
+    <Content Include="assets\fonts\museo_slab_500-webfont.eot" />
+    <Content Include="assets\fonts\museo_slab_500-webfont.svg" />
+    <Content Include="assets\fonts\museo_slab_500-webfont.ttf" />
+    <Content Include="assets\fonts\museo_slab_500-webfont.woff" />
+    <Content Include="assets\fonts\museo_slab_500-webfontd41d.eot" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\css\prettyPhoto.css" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\.DS_Store" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\fullscreen\1.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\fullscreen\2.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\fullscreen\3.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\fullscreen\4.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\fullscreen\5.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\fullscreen\6.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\fullscreen\high.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\fullscreen\huge.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\fullscreen\wide.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\loader.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\sprite.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\thumbnails\flash-logo.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\thumbnails\quicktime-logo.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\thumbnails\t_1.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\thumbnails\t_2.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\thumbnails\t_3.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\thumbnails\t_4.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\thumbnails\t_5.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\index.html" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\js\jquery-1.3.2.min.js" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\js\jquery-1.4.4.min.js" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\js\jquery-1.6.1.min.js" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\js\jquery.prettyPhoto.js" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\README" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\xhr_response.html" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\._prettyPhoto_compressed_3.1.6" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\._css" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\._images" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\._index.html" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\._js" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\._README" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\._xhr_response.html" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\css\._prettyPhoto.css" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\._.DS_Store" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\._fullscreen" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\._prettyPhoto" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\._thumbnails" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\fullscreen\._1.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\fullscreen\._2.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\fullscreen\._3.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\fullscreen\._4.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\fullscreen\._5.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\fullscreen\._6.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\fullscreen\._high.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\fullscreen\._huge.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\fullscreen\._wide.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\._dark_rounded" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\._dark_square" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\._default" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\._facebook" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\._light_rounded" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\._light_square" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_rounded\._btnNext.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_rounded\._btnPrevious.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_rounded\._contentPattern.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_rounded\._default_thumbnail.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_rounded\._loader.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_rounded\._sprite.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_square\._btnNext.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_square\._btnPrevious.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_square\._contentPattern.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_square\._default_thumbnail.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_square\._loader.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\dark_square\._sprite.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\._default_thumb.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\._loader.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\._sprite.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\._sprite_next.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\._sprite_prev.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\._sprite_x.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\default\._sprite_y.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\._btnNext.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\._btnPrevious.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\._contentPatternBottom.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\._contentPatternLeft.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\._contentPatternRight.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\._contentPatternTop.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\._default_thumbnail.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\._loader.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\facebook\._sprite.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_rounded\._btnNext.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_rounded\._btnPrevious.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_rounded\._default_thumbnail.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_rounded\._loader.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_rounded\._sprite.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_square\._btnNext.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_square\._btnPrevious.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_square\._default_thumbnail.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_square\._loader.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\light_square\._sprite.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\thumbnails\._flash-logo.png" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\thumbnails\._quicktime-logo.gif" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\thumbnails\._t_1.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\thumbnails\._t_2.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\thumbnails\._t_3.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\thumbnails\._t_4.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\thumbnails\._t_5.jpg" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\js\._jquery-1.3.2.min.js" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\js\._jquery-1.4.4.min.js" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\js\._jquery-1.6.1.min.js" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\js\._jquery.prettyPhoto.js" />
+    <Content Include="assets\images\3round-bottom-302x11.png" />
+    <Content Include="assets\images\accordion-title-bg.png" />
+    <Content Include="assets\images\accordion-title-span.png" />
+    <Content Include="assets\images\ad-652x95.png" />
+    <Content Include="assets\images\adv.jpg" />
+    <Content Include="assets\images\arrow-menu-list.png" />
+    <Content Include="assets\images\arrows.png" />
+    <Content Include="assets\images\author1.jpg" />
+    <Content Include="assets\images\author2.jpg" />
+    <Content Include="assets\images\author3.jpg" />
+    <Content Include="assets\images\black-trans.png" />
+    <Content Include="assets\images\blog\post_1.jpg" />
+    <Content Include="assets\images\blog\post_2.jpg" />
+    <Content Include="assets\images\blog\post_3.jpg" />
+    <Content Include="assets\images\bottom-recent-botder.png" />
+    <Content Include="assets\images\bulit-arrow1.png" />
+    <Content Include="assets\images\bulit-arrow2.png" />
+    <Content Include="assets\images\bulit-check.png" />
+    <Content Include="assets\images\bulit.png" />
+    <Content Include="assets\images\button-bg-h29.png" />
+    <Content Include="assets\images\button-bg-pink.png" />
+    <Content Include="assets\images\car-nav.png" />
+    <Content Include="assets\images\carnav-arrows.png" />
+    <Content Include="assets\images\chef.jpg" />
+    <Content Include="assets\images\content-bg.jpg" />
+    <Content Include="assets\images\faq-num-bg.png" />
+    <Content Include="assets\images\footer-logo.png" />
+    <Content Include="assets\images\frame-142x119.png" />
+    <Content Include="assets\images\header-image.jpg" />
+    <Content Include="assets\images\hot-recipes\hot_1.jpg" />
+    <Content Include="assets\images\hot-recipes\hot_2.jpg" />
+    <Content Include="assets\images\hot-recipes\hot_3.jpg" />
+    <Content Include="assets\images\hot-recipes\hot_4.jpg" />
+    <Content Include="assets\images\hot-recipes\special.jpg" />
+    <Content Include="assets\images\icons\favicon.png" />
+    <Content Include="assets\images\image-frame-132x145.png" />
+    <Content Include="assets\images\image-frame-232x157.png" />
+    <Content Include="assets\images\image-frame-71x64.png" />
+    <Content Include="assets\images\image-frame-92x89.png" />
+    <Content Include="assets\images\image-frame-dark-71x64.png" />
+    <Content Include="assets\images\li-bot-border.jpg" />
+    <Content Include="assets\images\list-items\recipe-list-item-1-big.jpg" />
+    <Content Include="assets\images\list-items\recipe-list-item-1.jpg" />
+    <Content Include="assets\images\list-items\recipe-list-item-2-main.jpg" />
+    <Content Include="assets\images\list-items\recipe-list-item-2.jpg" />
+    <Content Include="assets\images\list-items\recipe-list-item-3-main.jpg" />
+    <Content Include="assets\images\list-items\recipe-list-item-3.jpg" />
+    <Content Include="assets\images\list-items\recipe-list-item-4-main.jpg" />
+    <Content Include="assets\images\list-items\recipe-list-item-4.jpg" />
+    <Content Include="assets\images\loading.gif" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\more-img-slider-bg.png" />
+    <Content Include="assets\images\most-rated-bg.png" />
+    <Content Include="assets\images\most-rated-btn.png" />
+    <Content Include="assets\images\nav-bg.png" />
+    <Content Include="assets\images\nav-hover.png" />
+    <Content Include="assets\images\nav-seperator.png" />
+    <Content Include="assets\images\pet-border.png" />
+    <Content Include="assets\images\pettern-gray-tile.png" />
+    <Content Include="assets\images\pettern-gray.png" />
+    <Content Include="assets\images\quote-close.png" />
+    <Content Include="assets\images\quote-open.png" />
+    <Content Include="assets\images\rate-box-bg.png" />
+    <Content Include="assets\images\ratings-big.png" />
+    <Content Include="assets\images\red-tab-bg.jpg" />
+    <Content Include="assets\images\right-seperator.png" />
+    <Content Include="assets\images\search-btn.png" />
+    <Content Include="assets\images\search-field.png" />
+    <Content Include="assets\images\services-box.png" />
+    <Content Include="assets\images\services\services_1.jpg" />
+    <Content Include="assets\images\services\services_2.jpg" />
+    <Content Include="assets\images\services\services_3.jpg" />
+    <Content Include="assets\images\services\services_4.jpg" />
+    <Content Include="assets\images\services\services_5.jpg" />
+    <Content Include="assets\images\services\services_6.jpg" />
+    <Content Include="assets\images\share-btns.png" />
+    <Content Include="assets\images\sidebar-icons.png" />
+    <Content Include="assets\images\single-img-frame-listing.png" />
+    <Content Include="assets\images\single-img-frame.png" />
+    <Content Include="assets\images\single-rec\recipe_1.jpg" />
+    <Content Include="assets\images\single-rec\recipe_10.jpg" />
+    <Content Include="assets\images\single-rec\recipe_2.jpg" />
+    <Content Include="assets\images\single-rec\recipe_3.jpg" />
+    <Content Include="assets\images\single-rec\recipe_4.jpg" />
+    <Content Include="assets\images\single-rec\recipe_5.jpg" />
+    <Content Include="assets\images\single-rec\recipe_6.jpg" />
+    <Content Include="assets\images\single-rec\recipe_7.jpg" />
+    <Content Include="assets\images\single-rec\recipe_8.jpg" />
+    <Content Include="assets\images\single-rec\recipe_9.jpg" />
+    <Content Include="assets\images\single-rec\thumbs\recipe_1.jpg" />
+    <Content Include="assets\images\single-rec\thumbs\recipe_10.jpg" />
+    <Content Include="assets\images\single-rec\thumbs\recipe_2.jpg" />
+    <Content Include="assets\images\single-rec\thumbs\recipe_3.jpg" />
+    <Content Include="assets\images\single-rec\thumbs\recipe_4.jpg" />
+    <Content Include="assets\images\single-rec\thumbs\recipe_5.jpg" />
+    <Content Include="assets\images\single-rec\thumbs\recipe_6.jpg" />
+    <Content Include="assets\images\single-rec\thumbs\recipe_7.jpg" />
+    <Content Include="assets\images\single-rec\thumbs\recipe_8.jpg" />
+    <Content Include="assets\images\single-rec\thumbs\recipe_9.jpg" />
+    <Content Include="assets\images\slider-heading.png" />
+    <Content Include="assets\images\slider2-img-bg.png" />
+    <Content Include="assets\images\slider\000.jpg" />
+    <Content Include="assets\images\slider\001.jpg" />
+    <Content Include="assets\images\slider\002.jpg" />
+    <Content Include="assets\images\slider\accor_1.jpg" />
+    <Content Include="assets\images\slider\accor_2.jpg" />
+    <Content Include="assets\images\slider\accor_3.jpg" />
+    <Content Include="assets\images\slider\accor_4.jpg" />
+    <Content Include="assets\images\slider\left_1.jpg" />
+    <Content Include="assets\images\slider\left_2.jpg" />
+    <Content Include="assets\images\slider\left_3.jpg" />
+    <Content Include="assets\images\slider\nivo_1.jpg" />
+    <Content Include="assets\images\slider\nivo_2.jpg" />
+    <Content Include="assets\images\slider\nivo_3.jpg" />
+    <Content Include="assets\images\slider\nivo_4.jpg" />
+    <Content Include="assets\images\slider\nivo_5.jpg" />
+    <Content Include="assets\images\slider\nivo_6.jpg" />
+    <Content Include="assets\images\slider\single-recipe_1.jpg" />
+    <Content Include="assets\images\slider\single-recipe_2.jpg" />
+    <Content Include="assets\images\slider\single-recipe_3.jpg" />
+    <Content Include="assets\images\slider\small_1.jpg" />
+    <Content Include="assets\images\slider\small_2.jpg" />
+    <Content Include="assets\images\social-facebook.png" />
+    <Content Include="assets\images\social-flickr.png" />
+    <Content Include="assets\images\social-rss.png" />
+    <Content Include="assets\images\social-twitter.png" />
+    <Content Include="assets\images\spons.png" />
+    <Content Include="assets\images\tabed-bg.png" />
+    <Content Include="assets\images\tiny-images\tiny_1.jpg" />
+    <Content Include="assets\images\tiny-images\tiny_16.jpg" />
+    <Content Include="assets\images\tiny-images\tiny_17.jpg" />
+    <Content Include="assets\images\tiny-images\tiny_2.jpg" />
+    <Content Include="assets\images\tiny-images\tiny_3.jpg" />
+    <Content Include="assets\images\tiny-images\tiny_4.jpg" />
+    <Content Include="assets\images\tiny-images\tiny_5.jpg" />
+    <Content Include="assets\images\tiny-images\tiny_6.jpg" />
+    <Content Include="assets\images\tiny-images\tiny_7.jpg" />
+    <Content Include="assets\images\tiny-images\tiny_8.jpg" />
+    <Content Include="assets\images\tiny-images\tiny_9.jpg" />
+    <Content Include="assets\images\toggle-box-icon.png" />
+    <Content Include="assets\images\top-bg.jpg" />
+    <Content Include="assets\images\white-transparant.png" />
+    <Content Include="assets\images\widget-g-bg.png" />
+    <Content Include="assets\js\activeMenu.js" />
+    <Content Include="assets\js\include.js" />
+    <Content Include="assets\js\jquery-1.11.0.js" />
+    <Content Include="assets\js\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="assets\js\jquery.backgroundPosition.js" />
+    <Content Include="assets\js\jquery.cycle.js" />
+    <Content Include="assets\js\jquery.easing.1.3.js" />
+    <Content Include="assets\js\jquery.form.js" />
+    <Content Include="assets\js\jquery.validate.js" />
+    <Content Include="assets\js\redirect.js" />
+    <Content Include="assets\js\scripts.js" />
+    <Content Include="assets\js\twitterFetcher_v10_min.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="userControls\Comments.ascx" />
+    <Content Include="userControls\NewsAndEvents.ascx" />
+    <Content Include="node_modules\normalize.css\normalize.css" />
+    <Content Include="userControls\PostComments.ascx" />
+    <Content Include="userControls\PostRecents.ascx" />
+    <Content Include="Recipes.aspx" />
+    <Content Include="assets\css\styles.css.map" />
+    <Content Include="assets\css\_blogPage.scss" />
+    <Content Include="assets\css\_bottom.scss" />
+    <Content Include="assets\css\_contact.scss" />
+    <Content Include="assets\css\_container.scss" />
+    <Content Include="assets\css\_font.scss" />
+    <Content Include="assets\css\_footer.scss" />
+    <Content Include="assets\css\_header.scss" />
+    <Content Include="assets\css\_homepage.scss" />
+    <Content Include="assets\css\_media.scss" />
+    <Content Include="assets\css\_page.scss" />
+    <Content Include="assets\css\_recipeListing.scss" />
+    <Content Include="assets\css\_reset.scss" />
+    <Content Include="assets\css\_services.scss" />
+    <Content Include="assets\css\_sidebar.scss" />
+    <Content Include="assets\css\_singlePage.scss" />
+    <Content Include="assets\css\_sliders.scss" />
+    <Content Include="assets\fonts\droidsans-bold-webfont.eot" />
+    <Content Include="assets\fonts\droidsans-bold-webfont.ttf" />
+    <Content Include="assets\fonts\droidsans-webfont.eot" />
+    <Content Include="assets\fonts\droidsans-webfont.ttf" />
+    <Content Include="assets\fonts\droidsans-webfontd41d.eot" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\images\.DS_Store" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\prettyPhoto_compressed_3.1.6\README" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\._prettyPhoto_compressed_3.1.6" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\._css" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\._images" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\._js" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\._README" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\._.DS_Store" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\._fullscreen" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\._prettyPhoto" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\._thumbnails" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\._dark_rounded" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\._dark_square" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\._default" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\._facebook" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\._light_rounded" />
+    <Content Include="assets\frameworks\prettyPhoto_compressed_3.1.6\__MACOSX\prettyPhoto_compressed_3.1.6\images\prettyPhoto\._light_square" />
+    <Content Include="Site.Master" />
+    <Content Include="userControls\TopSearch.ascx" />
+    <Content Include="userControls\TwitterFeeds.ascx" />
+    <Content Include="userControls\Weekend.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services-Detail.aspx.cs">
+      <DependentUpon>Services-Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services-Detail.aspx.designer.cs">
+      <DependentUpon>Services-Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Single-sb.aspx.cs">
+      <DependentUpon>Single-sb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Single-sb.aspx.designer.cs">
+      <DependentUpon>Single-sb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Single.aspx.cs">
+      <DependentUpon>Single.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Single.aspx.designer.cs">
+      <DependentUpon>Single.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\Archives.ascx.cs">
+      <DependentUpon>Archives.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControls\Archives.ascx.designer.cs">
+      <DependentUpon>Archives.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\Comments.ascx.cs">
+      <DependentUpon>Comments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControls\Comments.ascx.designer.cs">
+      <DependentUpon>Comments.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\NewsAndEvents.ascx.cs">
+      <DependentUpon>NewsAndEvents.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControls\NewsAndEvents.ascx.designer.cs">
+      <DependentUpon>NewsAndEvents.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\PostComments.ascx.cs">
+      <DependentUpon>PostComments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControls\PostComments.ascx.designer.cs">
+      <DependentUpon>PostComments.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\PostRecents.ascx.cs">
+      <DependentUpon>PostRecents.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControls\PostRecents.ascx.designer.cs">
+      <DependentUpon>PostRecents.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recipes.aspx.cs">
+      <DependentUpon>Recipes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recipes.aspx.designer.cs">
+      <DependentUpon>Recipes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\TopSearch.ascx.cs">
+      <DependentUpon>TopSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControls\TopSearch.ascx.designer.cs">
+      <DependentUpon>TopSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\TwitterFeeds.ascx.cs">
+      <DependentUpon>TwitterFeeds.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControls\TwitterFeeds.ascx.designer.cs">
+      <DependentUpon>TwitterFeeds.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\Weekend.ascx.cs">
+      <DependentUpon>Weekend.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControls\Weekend.ascx.designer.cs">
+      <DependentUpon>Weekend.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\frameworks\Nivo-Slider-jQuery\.git\branches\" />
+    <Folder Include="assets\frameworks\Nivo-Slider-jQuery\.git\objects\info\" />
+    <Folder Include="assets\frameworks\Nivo-Slider-jQuery\.git\refs\tags\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="node_modules\normalize.css\CHANGELOG.md" />
+    <Content Include="node_modules\normalize.css\LICENSE.md" />
+    <Content Include="node_modules\normalize.css\package.json" />
+    <Content Include="node_modules\normalize.css\README.md" />
+    <Content Include="assets\images-long\cahoi" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51433</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44301/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

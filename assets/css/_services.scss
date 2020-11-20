@@ -1,0 +1,54 @@
+#left-area {
+    .img-box-serv {
+        display: block;
+        width: 285px;
+        height: 159px;
+        padding: 6px 0 0 6px;
+        margin: 0 0 12px;
+        background: url(../images/services-box.png) no-repeat;
+        img {
+            display: block;
+            width: 276px;
+            height: 145px;
+            border: 1px solid #390;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+        }
+    }
+    a.readmore.rightalign {
+        float: right;
+        margin-right: 15px;
+        clear: both;
+    }
+    .faq-list {
+        margin: 0 0 0 65px;
+        li {
+            padding: 15px 0 1px 0;
+            margin: 0 0 0;
+            background: url(../images/pet-border.png) bottom repeat-x;
+            position: relative;
+            h3 {
+                cursor: pointer;
+                margin: 0;
+                padding: 0 0 10px;
+            }
+            .number {
+                display: block;
+                width: 47px;
+                height: 45px;
+                background: url(../images/faq-num-bg.png) center top no-repeat;
+                font: 24px/45px "MuseoSlab500", Arial, Helvetica, sans-serif;
+                text-align: center;
+                color: #999999;
+                position: absolute;
+                top: 15px;
+                left: -69px;
+            }
+            &.active .number {
+                background: url(../images/faq-num-bg.png) center bottom no-repeat;
+                color: #fff;
+            }
+        }
+    }
+}
